@@ -13,7 +13,7 @@ A simple application where users can create accounts, search for movies they enj
 - Navigate to localhost:8080/h2-console to view the database. By default, both the username and password are set to the standard H2 credentials, 'sa'.
 
 ## Planned Features
-
+*Last updated 09.27.2020*
 - Movies persisted into Movie database table, not just into localStorage
 - Table-style favorites list
 - Rating system
