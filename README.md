@@ -1,4 +1,6 @@
-![Image](![Image](https://ibb.co/ggjFSBJ))
+	![Image][1]
+⋮
+[1]: https://ibb.co/ggjFSBJ
 
 # MovieBeeFullStackDemo
 Demo App Built for RightNow Media Interview
