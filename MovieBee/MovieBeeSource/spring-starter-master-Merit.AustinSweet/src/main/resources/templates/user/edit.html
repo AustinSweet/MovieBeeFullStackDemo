@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorate="~{layout/sidebar}">
+<head>
+<title>Edit Account</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div>
+            <p style="float: right;"><a href="https://thehoneybeeconservancy.org/"><img src="https://www.goodfreephotos.com/albums/vector-images/Gold-bee-vector-clipart.png" 
+                alt="Bee Logo" title="Donate to Save The Bees!" 
+                style="width:175px" align="right"></a>
+            </p>
+            <p><h3>
+        M o v i e </h3></p>
+                <p><h3>
+        B e e </h3></p>
+        </div>
+        <form class="form-signin" th:action="@{/user/edit}" th:object="${userDto}" method="post">
+            <h2 class="form-signin-heading">Account Info for Username: | <span th:text="*{userName}"></span> |</h2>
+            
+            <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="alert alert-danger">Email error</div>
+
+            <input type="text" th:field="*{email}" class="form-control top" placeholder="Email" required="required" autofocus="autofocus"/>
+            <input type="hidden" th:field="*{userName}"/>
+            <input type="hidden" th:field="*{id}"/>
+            
+            <button class="btn btn-lg btn-outline-dark btn-block" type="submit">Update Email</button>
+            
+            <p class="alert alert-success" th:if="${#httpServletRequest.getParameter('updated')}">You changes have been saved</p>
+        </form>
+        
+    </div>
+</body>
+</html>

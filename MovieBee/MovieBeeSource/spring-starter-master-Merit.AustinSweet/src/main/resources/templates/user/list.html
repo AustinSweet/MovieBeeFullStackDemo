@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorate="~{layout/sidebar}">
+<head>
+<title>Movies</title>
+</head>
+<body>
+    <div layout:fragment="content">
+       
+            <div>
+                <p style="float: right;"><a href="https://thehoneybeeconservancy.org/"><img src="https://www.goodfreephotos.com/albums/vector-images/Gold-bee-vector-clipart.png" alt="Bee Logo" 
+                    title="Donate to Save The Bees!" style="width:175px" align="right"></a>
+                </p>
+                <p><h3>
+            M o v i e </h3></p>
+                    <p><h3>
+            B e e </h3></p>
+            </div>
+            <h1>      </h1>
+            <h2>
+            <script>
+                window.onload = (event) => {
+                    for(var i = 0; i < localStorage.length; i++) {
+                    var str = (localStorage.getItem(localStorage.key(i)));
+                    document.getElementById("favorites").innerHTML += str;
+                    document.getElementById("favorites").innerHTML += "";
+                    }
+                }
+            </script>
+            <div id="favorites">
+
+            </div>
+            <h2/>
+    </div>
+</body>
+</html>
