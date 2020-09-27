@@ -1,5 +1,4 @@
-	![Image][1]
-⋮
+![Image][1]
 [1]: https://ibb.co/ggjFSBJ
 
 # MovieBeeFullStackDemo
